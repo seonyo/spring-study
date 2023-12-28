@@ -16,6 +16,6 @@ public class HelloController {
     @GetMapping("hello-mvc")
     public String helloMvc(@RequestParam("name") String name, Model model) {
         model.addAttribute("name", name);
-        return "hello-template";
+        return "hello-template";    //hello-template.html로 가라는 뜻
     }
 }
